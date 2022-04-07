@@ -1,0 +1,332 @@
+{
+	"info": {
+		"_postman_id": "84ea1440-dcd1-44e8-8ba2-559699a1dda7",
+		"name": "Student_api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "All_student_data",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "Getting_data",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"hks\",\r\n    \"password\":\"123\",\r\n    \"refresh\":\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY0OTQwMjI2OSwiaWF0IjoxNjQ5MzE1ODY5LCJqdGkiOiI3ZjM3OTY0NmM2Y2E0MWU5YWZjMTQyMzRlMjVkM2NjMiIsInVzZXJfaWQiOjF9.HhwRkL33KjKaRuEAQ9nD92R7Oow2VqO0djJhFb6D3U4\"\r\n}  ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/allstudents/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"allstudents",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 07 Apr 2022 07:18:28 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.6"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, PATCH, DELETE, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "136"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"name\": \"Hemant\",\n        \"roll\": \"39\",\n        \"city\": \"Churu\"\n    },\n    {\n        \"name\": \"Mohit\",\n        \"roll\": \"20\",\n        \"city\": \"Udaipur\"\n    },\n    {\n        \"name\": \"Divya\",\n        \"roll\": \"21\",\n        \"city\": \"Churu\"\n    }\n]"
+				},
+				{
+					"name": "Post_data",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"hks\",\r\n    \"password\":\"123\",\r\n    \"refresh\":\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY0OTQwMjI2OSwiaWF0IjoxNjQ5MzE1ODY5LCJqdGkiOiI3ZjM3OTY0NmM2Y2E0MWU5YWZjMTQyMzRlMjVkM2NjMiIsInVzZXJfaWQiOjF9.HhwRkL33KjKaRuEAQ9nD92R7Oow2VqO0djJhFb6D3U4\",\r\n    \"name\": \"hks\",\r\n    \"roll\": \"20\",\r\n    \"city\": \"Churu\"\r\n}  ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/allstudents/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"allstudents",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 07 Apr 2022 07:19:47 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.6"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, PATCH, DELETE, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "34"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg\": \"Data created sucessfully\"\n}"
+				},
+				{
+					"name": "patch_data",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"hks\",\r\n    \"password\":\"123\",\r\n    \"refresh\":\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY0OTQwMjI2OSwiaWF0IjoxNjQ5MzE1ODY5LCJqdGkiOiI3ZjM3OTY0NmM2Y2E0MWU5YWZjMTQyMzRlMjVkM2NjMiIsInVzZXJfaWQiOjF9.HhwRkL33KjKaRuEAQ9nD92R7Oow2VqO0djJhFb6D3U4\",\r\n    \"name\": \"hks\"\r\n\r\n}  ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/allstudents/1/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"allstudents",
+								"1",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 07 Apr 2022 07:22:37 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.6"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, PATCH, DELETE, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "27"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg\": \"Updation complete\"\n}"
+				},
+				{
+					"name": "delete_data",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"hks\",\r\n    \"password\":\"123\",\r\n    \"refresh\":\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY0OTQwMjI2OSwiaWF0IjoxNjQ5MzE1ODY5LCJqdGkiOiI3ZjM3OTY0NmM2Y2E0MWU5YWZjMTQyMzRlMjVkM2NjMiIsInVzZXJfaWQiOjF9.HhwRkL33KjKaRuEAQ9nD92R7Oow2VqO0djJhFb6D3U4\",\r\n    \"name\": \"hks\"\r\n\r\n}  ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/allstudents/4/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"allstudents",
+								"4",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 07 Apr 2022 07:23:45 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.6"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Origin"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, PATCH, DELETE, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "27"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg\": \"deletion complete\"\n}"
+				}
+			]
+		}
+	]
+}

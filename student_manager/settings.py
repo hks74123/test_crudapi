@@ -72,14 +72,20 @@ WSGI_APPLICATION = 'student_manager.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'djongo',
+#         'CLIENT':{
+#             "host":"mongodb+srv://Mydb:74123586@cluster0.doqsl.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+#             "name":"Student",
+#             "authMechanism":"SCRAM-SHA-1"
+#         }
+#     }
+# }
 DATABASES = {
     'default': {
-        'ENGINE': 'djongo',
-        'CLIENT':{
-            "host":"mongodb+srv://Mydb:74123586@cluster0.doqsl.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
-            "name":"Student",
-            "authMechanism":"SCRAM-SHA-1"
-        }
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
